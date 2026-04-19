@@ -7,6 +7,7 @@ import AnnotatingForAgents from './pages/AnnotatingForAgents.jsx'
 import MorphingIcons from './pages/MorphingIcons.jsx'
 import Honkish from './pages/Honkish.jsx'
 import FamilyValues from './pages/FamilyValues.jsx'
+import YousignQES from './pages/YousignQES.jsx'
 
 const pageVariants = {
   initial: { opacity: 0, y: 8 },
@@ -34,6 +35,7 @@ export default function App() {
         <Route path="/morphing-icons-with-claude" element={<Page><MorphingIcons /></Page>} />
         <Route path="/honkish" element={<Page><Honkish /></Page>} />
         <Route path="/family-values" element={<Page><FamilyValues /></Page>} />
+        <Route path="/yousign-qes" element={<Page><YousignQES /></Page>} />
       </Routes>
     </AnimatePresence>
   )

@@ -487,6 +487,52 @@ pre code {
   text-align: right;
 }
 
+/* ---------- Stats ---------- */
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 24px 0 32px;
+}
+
+.stat {
+  background: var(--code-bg);
+  border-radius: 12px;
+  padding: 20px 16px;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-top: 4px;
+  line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  .stat-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.post-content ul,
+.post-content ol {
+  margin: 0 0 1.2em;
+  padding-left: 20px;
+}
+
+.post-content li {
+  margin-bottom: 6px;
+}
+
 /* ---------- Responsive ---------- */
 
 @media (max-width: 900px) {

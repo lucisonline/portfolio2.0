@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom'
 import NewBadge from '../components/NewBadge.jsx'
 
 const posts = [
-  { year: 2026, title: 'Liveline', slug: 'liveline', date: '16/02', isNew: true },
+  { year: 2026, title: 'Yousign — Reducing errors in QES', slug: 'yousign-qes', date: '19/04', isNew: true },
+  { year: 2026, title: 'Liveline', slug: 'liveline', date: '16/02' },
   { year: 2026, title: 'Agentation', slug: 'agentation', date: '21/01' },
   { year: 2026, title: 'Annotating for agents', slug: 'annotating-for-agents', date: '16/01' },
   { year: 2026, title: 'Morphing icons with Claude', slug: 'morphing-icons-with-claude', date: '13/01' },
