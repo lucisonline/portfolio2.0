@@ -523,6 +523,96 @@ pre code {
   }
 }
 
+/* ---------- Persona + flow cards ---------- */
+
+.persona-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 20px 0 28px;
+}
+
+.persona {
+  background: var(--code-bg);
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.persona-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.persona-name {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.persona-desc {
+  font-size: 14px;
+  color: var(--text-soft);
+  line-height: 1.5;
+}
+
+.callout {
+  background: #fdf4ff;
+  border-left: 3px solid var(--accent);
+  padding: 14px 16px;
+  border-radius: 4px;
+  margin: 20px 0 28px;
+  font-size: 15px;
+}
+
+.flow-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 20px 0 8px;
+}
+
+.flow-card {
+  background: var(--code-bg);
+  border-radius: 12px;
+  padding: 18px 16px;
+}
+
+.flow-n {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--text);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.flow-title {
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.flow-sub {
+  font-size: 13px;
+  color: var(--text-soft);
+}
+
+@media (max-width: 600px) {
+  .persona-grid,
+  .flow-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .post-content ul,
 .post-content ol {
   margin: 0 0 1.2em;

@@ -8,6 +8,7 @@ import MorphingIcons from './pages/MorphingIcons.jsx'
 import Honkish from './pages/Honkish.jsx'
 import FamilyValues from './pages/FamilyValues.jsx'
 import YousignQES from './pages/YousignQES.jsx'
+import IgnitionProgram from './pages/IgnitionProgram.jsx'
 
 const pageVariants = {
   initial: { opacity: 0, y: 8 },
@@ -36,6 +37,7 @@ export default function App() {
         <Route path="/honkish" element={<Page><Honkish /></Page>} />
         <Route path="/family-values" element={<Page><FamilyValues /></Page>} />
         <Route path="/yousign-qes" element={<Page><YousignQES /></Page>} />
+        <Route path="/ignition-program" element={<Page><IgnitionProgram /></Page>} />
       </Routes>
     </AnimatePresence>
   )
