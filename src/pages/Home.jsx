@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import NewBadge from '../components/NewBadge.jsx'
 
 const caseStudies = [
-  { year: 2026, title: 'Yousign - Reducing errors in QES', slug: 'yousign-qes', date: '19/04', isNew: true },
-  { year: 2026, title: 'Ignition Program - Reshaping sign-up', slug: 'ignition-program', date: '18/04', isNew: true },
+  { year: 2025, title: 'Yousign - Reducing errors in QES', slug: 'yousign-qes', date: '19/04', isNew: true },
+  { year: 2023, title: 'Ignition Program - Reshaping sign-up', slug: 'ignition-program', date: '18/04', isNew: true },
 ]
 
 const writings = []

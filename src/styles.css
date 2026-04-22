@@ -316,6 +316,27 @@ body.home-page #root {
   margin: 0 0 2px;
 }
 
+.post-title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 0 0 2px;
+}
+
+.post-title-row h1 {
+  margin: 0;
+}
+
+.post-title-row .post-tags {
+  font-family: var(--font-hand);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--text-muted);
+  letter-spacing: 0;
+  line-height: 1;
+}
+
 .post-content .date {
   color: var(--text-muted);
   font-family: var(--font-serif);
