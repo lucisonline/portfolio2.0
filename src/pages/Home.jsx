@@ -56,7 +56,7 @@ export default function Home() {
   return (
     <div className="home">
       <header className="home-header">
-        <h1>Bonjour my name is luc</h1>
+        <h1>Bonjour my name is Luc</h1>
       </header>
 
       <div className="home-body">
