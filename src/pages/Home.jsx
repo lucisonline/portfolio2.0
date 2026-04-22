@@ -63,7 +63,7 @@ export default function Home() {
         <p>I&rsquo;m an Anthropologist + Designer.</p>
 
         <p>
-          I between Paris, Beirut, and Scotland,
+          I grew up between Paris, Beirut, and Scotland,
           which mostly just means I&rsquo;m bad at answering &ldquo;where are you from.&rdquo;
         </p>
 
