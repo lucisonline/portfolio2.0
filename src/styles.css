@@ -140,12 +140,13 @@ body.home-page #root {
 }
 
 .company-logo {
-  width: 1em;
-  height: 1em;
-  margin-right: 4px;
+  display: inline-block;
+  width: 1.15em;
+  height: 1.15em;
+  margin-right: 6px;
   border-radius: 3px;
   object-fit: contain;
-  vertical-align: -0.15em;
+  vertical-align: -0.2em;
 }
 
 .writing {
