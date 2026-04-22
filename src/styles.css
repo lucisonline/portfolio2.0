@@ -70,7 +70,8 @@ h3 {
 
 /* ---------- Home ---------- */
 
-body.home-page {
+body.home-page,
+body.home-page #root {
   background: var(--home-bg);
   color: var(--home-fg);
 }
