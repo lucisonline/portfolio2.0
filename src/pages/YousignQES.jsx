@@ -5,23 +5,28 @@ const sections = [
   'The challenge',
   'Research',
   'Design process',
-  'Batch 1 \u2014 Verification errors',
-  'Batch 2 \u2014 Condition errors',
-  'Batch 3 \u2014 Sender-side data',
+  'Batch 1 - Verification errors',
+  'Batch 2 - Condition errors',
+  'Batch 3 - Sender-side data',
   'Results',
   'Reflections',
 ]
 
 export default function YousignQES() {
   return (
-    <PostLayout title="Yousign — Reducing errors in QES" sections={sections}>
-      <h1>Yousign &mdash; Reducing errors in the QES flow</h1>
+    <PostLayout title="Yousign - Reducing errors in QES" sections={sections}>
+      <h1>Yousign - Reducing errors in the QES flow</h1>
       <p className="date">19 April, 2026</p>
+
+      <img
+        src="/yousign/CleanShot_2024-12-18_at_12.56.412x.png"
+        alt="La Signature Électronique Qualifiée de Yousign"
+      />
 
       <h2 id="overview">Overview</h2>
       <p>
         At Yousign, I reimagined the Qualified Electronic Signature (QES) experience
-        &mdash; a process known for its complexity and strict security standards. QES
+        - a process known for its complexity and strict security standards. QES
         is essential for compliance, but it came with significant friction: long
         verification times, frequent errors, and costly failed attempts. The goal was
         to create a smoother, more intuitive journey without compromising security.
@@ -37,7 +42,7 @@ export default function YousignQES() {
         Each verification attempt has a direct cost. Failed attempts quickly
         accumulated into real expenses for senders, frustrated users, and hurt both
         customer service workload and brand perception. Successful identification on
-        the first try wasn&rsquo;t just a UX goal &mdash; it was a business one.
+        the first try wasn&rsquo;t just a UX goal - it was a business one.
       </p>
 
       <h2 id="research">Research</h2>
@@ -48,22 +53,64 @@ export default function YousignQES() {
       <p>Looking at the error data, two causes dominated:</p>
       <ul>
         <li>
-          <strong>~10%</strong> &mdash; Signers submitting documents that didn&rsquo;t
+          <strong>~10%</strong> - Signers submitting documents that didn&rsquo;t
           meet Ubble&rsquo;s quality standards (blurred images, expired IDs, etc.),
           especially among less tech-savvy users.
         </li>
         <li>
-          <strong>~13%</strong> &mdash; Mismatches between declared first/last names
+          <strong>~13%</strong> - Mismatches between declared first/last names
           and the ID document, causing verification failures on Yousign&rsquo;s side.
         </li>
       </ul>
+      <p>Here is a graph with the data set:</p>
+      <img
+        src="/yousign/CleanShot_2024-12-17_at_17.32.242x.png"
+        alt="Funnel showing Ubble identifications processed, Ubble OK (86.57%), and Identity OK (74.22%)"
+      />
       <p>
-        I worked with Ubble to understand the root causes behind failed
-        identifications, and collaborated across the business &mdash; Customer Care,
-        Engineering, Product &mdash; to map the full experience from signature
-        request creation through signing. This gave me a clear picture of the
-        technical constraints and the real friction points.
+        We then turned to Ubble, our provider, to understand the core reasons behind
+        the failed identifications.
       </p>
+      <img
+        src="/yousign/CleanShot_2024-12-17_at_16.25.562x.png"
+        alt="Stacked bar chart: invalid reasons evolution across four weekly cohorts"
+      />
+      <p>
+        I collaborated with various teams across the business-from Customer Care
+        to Engineering-to map out every step of the experience. This helped me
+        gather insights about user friction points, evaluate current features, and
+        identify potential improvements.
+      </p>
+      <p>
+        I mapped the complete experience from the creation of a signature request
+        (SR) to its signature.
+      </p>
+      <img
+        src="/yousign/image.png"
+        alt="Customer Journey QES spanning signature request creation to signature"
+      />
+      <img src="/yousign/Flow_QES.png" alt="End-to-end service blueprint of the QES flow" />
+      <p className="caption">Note - some info has been blurred to respect the privacy of the company.</p>
+
+      <p>
+        Gathering feedback early in the process gave me a clear understanding of both
+        the technical limitations and possibilities within the flow.
+      </p>
+
+      <div className="research-row">
+        <img
+          src="/yousign/CleanShot_2024-12-11_at_16.33.102x.png"
+          alt="Board clustering frictions, current features, and ideas"
+        />
+        <img
+          src="/yousign/387893b7-3c82-4b35-9cc1-1e16bef6a3d7.png"
+          alt="Signer persona: as a signer, I have to wait for the result of my identification"
+        />
+        <img
+          src="/yousign/CleanShot_2024-12-18_at_13.00.392x.png"
+          alt="Workshop sticky notes exploring parsing rules and identity-document variation"
+        />
+      </div>
 
       <h2 id="design-process">Design process</h2>
       <p>Three hypotheses came out of the research:</p>
@@ -78,7 +125,7 @@ export default function YousignQES() {
         </li>
         <li>
           Accurate signer information needs to be collected from senders earlier
-          &mdash; at the QES request stage.
+          - at the QES request stage.
         </li>
       </ol>
       <p>
@@ -88,33 +135,65 @@ export default function YousignQES() {
         work was split into three batches.
       </p>
 
-      <h2 id="batch-1-verification-errors">Batch 1 &mdash; Reducing identity verification errors</h2>
+      <h2 id="batch-1-verification-errors">Batch 1 - Reducing identity verification errors</h2>
       <p>
         The first focus was the information-verification step, where signers confirm
         the details the sender shared about them. Research showed signers were
         rushing through this screen, leading to mismatches with their ID.
       </p>
+      <img src="/yousign/CleanShot_2024-12-18_at_13.42.192x.png" alt="Original Verify your information screen on desktop" />
+      <p className="caption">This was the legacy page.</p>
       <p>
         First attempts were mobile-first concepts that deliberately added friction to
-        slow users down. What we learned in live testing: too much friction made the
-        experience worse without meaningfully reducing errors. The better approach was
-        <em> guided attention</em> &mdash; showing signers exactly where to look on
+        slow users down.
+      </p>
+      <img
+        src="/yousign/CleanShot_2024-12-18_at_13.52.492x.png"
+        alt="Concept 1, Concept 2, and Concept 3 mobile-first explorations"
+      />
+      <p>
+        What we learned in live testing: too much friction made the experience worse
+        without meaningfully reducing errors. The better approach was
+        <em> guided attention</em> - showing signers exactly where to look on
         their ID document at the moment they needed it.
       </p>
-      <p>Final direction:</p>
-      <ul>
-        <li>Custom illustrations built with the Brand team, tailored to each country represented by Yousign.</li>
-        <li>Sharper UX writing &mdash; &ldquo;Verify your information&rdquo; became &ldquo;Verify your first and last name.&rdquo;</li>
-        <li>Concrete visual examples of where to find names and separators (hyphens, commas, spaces) on real ID documents.</li>
-      </ul>
+      <img
+        src="/yousign/CleanShot_2024-12-16_at_15.19.332x.png"
+        alt="Mobile screens highlighting where to look on a French ID for full name and separators"
+      />
+      <p>
+        With the concept in mind, we collaborated closely with the Brand team to
+        develop custom illustrations and unique names for each country represented by
+        Yousign. We also refined the UX writing - &ldquo;Verify your
+        information&rdquo; became &ldquo;Verify your first and last name.&rdquo;
+      </p>
+      <img
+        src="/yousign/CleanShot_2024-12-16_at_15.40.202x.png"
+        alt="Final desktop screen: Verify your first and last name, with example ID"
+      />
+      <img
+        src="/yousign/afwef.png"
+        alt="Before and after comparison of the Batch 1 screens, localized per country"
+      />
 
-      <h2 id="batch-2-condition-errors">Batch 2 &mdash; Reducing condition-based errors</h2>
+      <h2 id="batch-2-condition-errors">Batch 2 - Reducing condition-based errors</h2>
       <p>
         The second problem was environmental: poor lighting, weak internet, outdated
         phones, expired documents. These weren&rsquo;t about the signer&rsquo;s
-        identity &mdash; they were about the setup.
+        identity - they were about the setup.
       </p>
-      <p>We narrowed the guidance to four key conditions:</p>
+      <img
+        src="/yousign/CleanShot_2024-12-16_at_17.45.482x.png"
+        alt="Original identification start screen with a single Start verification button"
+      />
+      <p className="caption">Before - a single &ldquo;Start verification&rdquo; button, no pre-flight guidance.</p>
+      <p>We sat down and looked at the error rates in regards to the conditions:</p>
+      <img
+        src="/yousign/CleanShot_2024-12-17_at_16.08.242x.png"
+        alt="Bar chart of identifications per month, broken down by error reason codes"
+      />
+      <p className="caption">For privacy reasons, the content has been blurred.</p>
+      <p>Our recommendations for reducing errors focused on four key conditions:</p>
       <ul>
         <li>A valid, up-to-date ID document</li>
         <li>A stable internet connection</li>
@@ -122,14 +201,30 @@ export default function YousignQES() {
         <li>A recent smartphone</li>
       </ul>
       <p>
-        I then ran a series of UI tests &mdash; including a quick Maze test &mdash; to
-        figure out how much information to show and what users actually retained. The
-        first iterations were information-heavy and overwhelmed signers. The final
-        version used larger cards with clear, attention-grabbing icons and
-        stripped-down copy &mdash; enough to guide, not enough to overload.
+        Based on these recommendations, we designed a series of UI tests -
+        including a quick Maze test - to figure out how much information to
+        show and what users actually retained.
       </p>
+      <img
+        src="/yousign/CleanShot_2024-12-17_at_16.52.062x.png"
+        alt="Solutions 1 and 2: information-dense desktop layouts"
+      />
+      <img
+        src="/yousign/CleanShot_2024-12-17_at_16.07.132x.png"
+        alt="Solutions 3 and 4: icon-driven card layouts"
+      />
+      <p>
+        We realized the first solutions provided too much information and overwhelmed
+        signers. We refined the UX writing and redesigned the cards into larger,
+        icon-driven cards with stripped-down copy - enough to guide, not enough
+        to overload. Here&rsquo;s the final version:
+      </p>
+      <img
+        src="/yousign/CleanShot_2024-12-17_at_16.43.522x.png"
+        alt="Final Before starting identification screen on desktop and mobile"
+      />
 
-      <h2 id="batch-3-sender-side-data">Batch 3 &mdash; Getting accurate information from senders</h2>
+      <h2 id="batch-3-sender-side-data">Batch 3 - Getting accurate information from senders</h2>
       <p>
         The final batch addressed the root cause: the sender&rsquo;s side. If the
         information entered at signature request creation is already wrong, nothing
@@ -143,22 +238,62 @@ export default function YousignQES() {
       <p>
         Early explorations tried adding warnings in both the invitation email and the
         settings page. That quickly felt like noise in an already dense settings
-        environment. The better approach was detecting error-prone cases early and
-        letting senders edit signer information directly in the settings.
+        environment.
       </p>
-      <p>Final solutions:</p>
-      <ul>
-        <li>
-          A notification system that, during contact creation, reminds the sender
-          that the name must match the ID document exactly.
-        </li>
-        <li>
-          A modal that appears only when the signer&rsquo;s name is likely to cause a
-          parsing issue (e.g. composed names), prompting the sender to confirm before
-          sending.
-        </li>
-      </ul>
-      <p>In parallel, we rebuilt the help center to provide clearer guidance on error cases for signers.</p>
+      <img
+        src="/yousign/CleanShot_2024-12-17_at_17.21.142x.png"
+        alt="Early explorations: warnings in the invitation email and in SR settings"
+      />
+      <p>
+        The better approach was detecting error-prone cases early and letting senders
+        edit signer information directly in the settings. Here are the approaches we
+        considered:
+      </p>
+      <img
+        src="/yousign/QES_Err.png"
+        alt="Setting space explorations: modale to edit contact and modale to warn users"
+      />
+      <img
+        src="/yousign/CleanShot_2024-12-17_at_17.22.152x.png"
+        alt="How it could work: confirmation modal listing contact names to verify"
+      />
+      <img
+        src="/yousign/CleanShot_2024-12-17_at_17.22.272x.png"
+        alt="Full preparation screen with the confirmation modal shown inline"
+      />
+      <p>Then after much pondering, here is the final result:</p>
+      <img
+        src="/yousign/ewfwef.png"
+        alt="Batch 3 before and after: contact adding and signature level"
+      />
+      <p>
+        We implemented a notification system to inform senders, during the process of
+        adding a contact, that the signer&rsquo;s name must match the one on their ID
+        document.
+      </p>
+      <img
+        src="/yousign/CleanShot_2024-12-18_at_12.13.322x.png"
+        alt="Before and after of the preparation screen, with When to display annotation"
+      />
+      <p>
+        We also designed a modal that appears only when a signer&rsquo;s name could
+        potentially cause an identification error due to parsing issues.
+      </p>
+      <img
+        src="/yousign/CleanShot_2024-12-18_at_12.12.592x.png"
+        alt="Signature level settings with the confirmation modal shown only for risky names"
+      />
+      <p>
+        Alongside these initiatives, we rebuilt the{' '}
+        <a
+          href="https://help.yousign.app/en/articles/103573-sign-documents-with-the-qualified-electronic-signature-qes"
+          target="_blank"
+          rel="noreferrer"
+        >
+          help center page
+        </a>{' '}
+        to provide clearer guidance on error cases for signers.
+      </p>
 
       <h2 id="results">Results</h2>
       <div className="stat-grid">
@@ -167,7 +302,7 @@ export default function YousignQES() {
         <Stat value="+10%" label="Overall completion rate" />
       </div>
       <p>
-        Small copy changes carried real weight &mdash; &ldquo;Verify your first and
+        Small copy changes carried real weight - &ldquo;Verify your first and
         last name&rdquo; gave users the confidence to move through the step
         correctly. Adding gentle friction at the right moments prevented errors
         without making the flow feel heavier.
@@ -175,7 +310,7 @@ export default function YousignQES() {
 
       <h2 id="reflections">Reflections</h2>
       <p>
-        Cross-functional collaboration was central &mdash; Customer Care surfaced the
+        Cross-functional collaboration was central - Customer Care surfaced the
         real friction, Engineering defined what was possible within the legacy
         constraints, and Brand shaped how the guidance felt. Iteration was the only
         way through: without A/B testing, every release had to be measured, observed,

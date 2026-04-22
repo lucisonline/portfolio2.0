@@ -7,20 +7,24 @@ const sections = [
   'Ideation',
   'UI and prototype',
   'Key design decisions',
-  'Links',
   'Reflections',
 ]
 
 export default function IgnitionProgram() {
   return (
-    <PostLayout title="Ignition Program — Reshaping sign-up" sections={sections}>
-      <h1>Ignition Program &mdash; Reshaping the sign-up</h1>
+    <PostLayout title="Ignition Program - Reshaping sign-up" sections={sections}>
+      <h1>Ignition Program - Reshaping the sign-up</h1>
       <p className="date">
         Freelance &middot; UX Research &middot; UX Design &middot; UI Design
       </p>
       <p className="caption" style={{ textAlign: 'left', margin: '-28px 0 32px' }}>
         Case study 1 of 2
       </p>
+
+      <img
+        src="/ignition/Ignition_Renders.png"
+        alt="Ignition Program sign-up screens shown on three mobile devices"
+      />
 
       <h2 id="context">Context</h2>
       <p>
@@ -29,7 +33,7 @@ export default function IgnitionProgram() {
       <p>
         Ignition Program is the leading recruitment agency for startups in France.
         With the boom of the tech scene, the company saw a sharp increase in both
-        companies and talents using the service &mdash; and realized they needed a
+        companies and talents using the service - and realized they needed a
         dedicated digital product to streamline recruiting and improve matching
         between the two sides.
       </p>
@@ -37,7 +41,7 @@ export default function IgnitionProgram() {
       <p>
         Over five months, I worked with the Ignition team to build two digital
         experiences: one to help talents apply to the program, and one to match them
-        with the right companies. This case study covers the first &mdash; the
+        with the right companies. This case study covers the first - the
         complete redesign of the sign-up process.
       </p>
 
@@ -57,7 +61,7 @@ export default function IgnitionProgram() {
       </p>
       <p>Two insights stood out:</p>
       <ul>
-        <li>The sign-up was extremely long &mdash; average completion time was around one hour.</li>
+        <li>The sign-up was extremely long - average completion time was around one hour.</li>
         <li>
           The questions lacked guidance and clarity. Their open-ended nature left
           users unsure of what &ldquo;a good answer&rdquo; even looked like.
@@ -65,18 +69,11 @@ export default function IgnitionProgram() {
       </ul>
       <p>From the interviews, we built two personas, using nicknames already in use internally at Ignition:</p>
 
-      <div className="persona-grid">
-        <Persona
-          name="Sarah the Shiny"
-          description="A young talent with little to no professional experience, just discovering the tech ecosystem."
-          accent="#f59e0b"
-        />
-        <Persona
-          name="Sasha the Switcher"
-          description="A more experienced talent, usually already employed, looking for their next career step."
-          accent="#3b82f6"
-        />
+      <div className="research-row">
+        <img src="/ignition/Pink.png" alt="Sarah the Shiny persona card - a young graduate discovering the tech ecosystem" />
+        <img src="/ignition/Switcher.png" alt="Sasha the Switcher persona card - an experienced professional ready for the next step" />
       </div>
+      <p className="caption">Sarah the Shiny and Sasha the Switcher.</p>
 
       <p className="callout">
         <strong>Problem statement.</strong> Talents need guidance and efficiency when
@@ -96,7 +93,7 @@ export default function IgnitionProgram() {
       </p>
       <ul>
         <li>One question per page, so no screen felt overwhelming.</li>
-        <li>Strip each screen down &mdash; less data, more focus.</li>
+        <li>Strip each screen down - less data, more focus.</li>
         <li>Use color and illustration to make the experience more playful.</li>
         <li>Add clear guidance on the harder questions.</li>
         <li>Surface existing Ignition blog content inside the app, where it was actually relevant.</li>
@@ -118,21 +115,77 @@ export default function IgnitionProgram() {
       </div>
       <p className="caption">Three distinct user flows, each asking only what&rsquo;s relevant.</p>
 
+      <img
+        src="/ignition/Screenshot_2022-10-06_at_11.46.07.png"
+        alt="Parcours Classique - end-to-end user flow for the classic sign-up path"
+      />
+      <img
+        src="/ignition/Screenshot_2022-10-06_at_11.46.40.png"
+        alt="Parcours Chassée LEET - shorter flow for LinkedIn-sourced candidates"
+      />
+      <img
+        src="/ignition/Screenshot_2022-10-06_at_11.47.32.png"
+        alt="Third user flow mapping the technical candidate path"
+      />
+      <p>
+        The flows are dense - here&rsquo;s the legend that ties the node types
+        together:
+      </p>
+      <img
+        src="/ignition/Screenshot_2022-10-08_at_17.34.57.png"
+        alt="Legend for the user-flow diagrams: start, end, action, page, potential work, parcours LEET, state, delightzone"
+      />
+
       <h2 id="ui-and-prototype">UI and prototype</h2>
       <p>
         Mid-fidelity went through two full iterations (V1 &rarr; V2 &rarr; final)
         before landing on the shipped design.
       </p>
+      <div className="research-row">
+        <img src="/ignition/Frame_76.png" alt="V1 mid-fidelity mockups of the sign-up questions" />
+        <img src="/ignition/2.png" alt="V2 mid-fidelity mockups with clearer hierarchy and more playful visuals" />
+      </div>
+      <p className="caption">V1 (left) &rarr; V2 (right).</p>
+      <p>And finally the high-fidelity mobile screens:</p>
+      <img
+        src="/ignition/Mobile.png"
+        alt="Final high-fidelity mobile screen asking which technologies the candidate wants to work with"
+      />
       <p>
         I pared the components down to their essence and built a mobile-first UI kit
         covering buttons, inputs, progress bar, profile picture, logo variants, CV
         upload, gradient backgrounds, and the illustration system.
       </p>
+      <img
+        src="/ignition/Screenshot_2022-10-08_at_20.00.27.png"
+        alt="High-fidelity mobile UI kit - buttons, inputs, progress bar, profile picture, CV upload, gradients, illustrations"
+      />
+      <img
+        src="/ignition/Screenshot_2022-10-09_at_11.47.05.png"
+        alt="Color palette and typography - GT Walsheim Pro, brand, secondary, accent and neutral colors"
+      />
       <p>
         We also added light onboarding and off-boarding screens to bring context at
-        the entry and exit of the flow &mdash; giving users a sense of what to expect
+        the entry and exit of the flow - giving users a sense of what to expect
         and what comes next, without lengthening the core questionnaire.
       </p>
+      <div className="research-row">
+        <img src="/ignition/Classique-1.png" alt="Onboarding screen 1 - a coach for transparency and good choices" />
+        <img src="/ignition/Classique-2.png" alt="Onboarding screen 2 - tailored help to find a fulfilling job" />
+        <img src="/ignition/Classique.png" alt="Entry screen - welcome to the application space" />
+        <img src="/ignition/Classique%201.png" alt="Off-boarding confirmation - application is on its way" />
+      </div>
+
+      <p>See it in action:</p>
+      <div style={{ position: 'relative', width: '100%', aspectRatio: '16 / 9', borderRadius: 12, overflow: 'hidden' }}>
+        <iframe
+          src="https://www.youtube.com/embed/4gx54i0IpH8"
+          title="Ignition Program sign-up prototype"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 0 }}
+        />
+      </div>
 
       <h2 id="key-design-decisions">Key design decisions</h2>
       <ul>
@@ -159,17 +212,9 @@ export default function IgnitionProgram() {
         </li>
       </ul>
 
-      <h2 id="links">Links</h2>
-      <p>
-        Live flow:{' '}
-        <a href="https://apply.ignition-program.com/hello" target="_blank" rel="noreferrer">
-          apply.ignition-program.com/hello
-        </a>
-      </p>
-
       <h2 id="reflections">Reflections</h2>
       <p>
-        The biggest shift on this project wasn&rsquo;t visual &mdash; it was
+        The biggest shift on this project wasn&rsquo;t visual - it was
         structural. Moving from one long questionnaire to branching flows meant the
         product stopped treating every applicant the same way, which is what the
         original research was really telling us. Once that decision was made, the UI
@@ -177,17 +222,6 @@ export default function IgnitionProgram() {
         of person.
       </p>
     </PostLayout>
-  )
-}
-
-function Persona({ name, description, accent }) {
-  const initials = name.split(' ').map((w) => w[0]).slice(0, 2).join('')
-  return (
-    <div className="persona">
-      <div className="persona-avatar" style={{ background: accent }}>{initials}</div>
-      <div className="persona-name">{name}</div>
-      <div className="persona-desc">{description}</div>
-    </div>
   )
 }
 
