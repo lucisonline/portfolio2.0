@@ -136,19 +136,16 @@ body.home-page #root {
 }
 
 .company-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
   white-space: nowrap;
 }
 
 .company-logo {
   width: 1em;
   height: 1em;
+  margin-right: 4px;
   border-radius: 3px;
   object-fit: contain;
-  flex-shrink: 0;
-  vertical-align: middle;
+  vertical-align: -0.15em;
 }
 
 .writing {
