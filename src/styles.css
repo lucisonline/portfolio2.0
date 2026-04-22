@@ -10,7 +10,7 @@
   --text: #18181b;
   --text-muted: #a1a1aa;
   --text-soft: #71717a;
-  --bg: #ffffff;
+  --bg: #FBFBFB;
   --border: #e5e7eb;
   --border-soft: #f1f1f3;
   --code-bg: #f6f6f7;
@@ -246,6 +246,15 @@ body.home-page #root {
   grid-template-columns: 240px minmax(0, var(--max-prose));
   gap: 96px;
   justify-content: center;
+  font-family: var(--font-serif);
+}
+
+.post-sidebar .title,
+.post-sidebar li a,
+.post-sidebar .back {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 465;
 }
 
 .post-sidebar {
@@ -291,31 +300,46 @@ body.home-page #root {
 
 .post-content {
   max-width: var(--max-prose);
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 465;
 }
 
 .post-content h1 {
-  font-size: 16px;
-  font-weight: 500;
+  font-family: var(--font-display);
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
   margin: 0 0 2px;
 }
 
 .post-content .date {
   color: var(--text-muted);
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 465;
   font-size: 16px;
   margin: 0 0 40px;
 }
 
 .post-content h2 {
-  font-size: 16px;
-  font-weight: 600;
+  font-family: var(--font-display);
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
   margin: 56px 0 20px;
   padding-bottom: 8px;
   border-bottom: 1px solid var(--border-soft);
 }
 
 .post-content h3 {
+  font-family: var(--font-display);
+  font-style: normal;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
+  letter-spacing: 0.02em;
   margin: 32px 0 12px;
 }
 
