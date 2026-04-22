@@ -103,7 +103,6 @@ body.home-page #root {
 .home-body {
   font-family: var(--font-serif);
   font-weight: 465;
-  font-style: italic;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0;
@@ -253,7 +252,6 @@ body.home-page #root {
 .post-sidebar li a,
 .post-sidebar .back {
   font-family: var(--font-serif);
-  font-style: italic;
   font-weight: 465;
 }
 
@@ -301,13 +299,11 @@ body.home-page #root {
 .post-content {
   max-width: var(--max-prose);
   font-family: var(--font-serif);
-  font-style: italic;
   font-weight: 465;
 }
 
 .post-content h1 {
   font-family: var(--font-display);
-  font-style: normal;
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 0.02em;
@@ -317,7 +313,6 @@ body.home-page #root {
 .post-content .date {
   color: var(--text-muted);
   font-family: var(--font-serif);
-  font-style: italic;
   font-weight: 465;
   font-size: 16px;
   margin: 0 0 40px;
@@ -325,7 +320,6 @@ body.home-page #root {
 
 .post-content h2 {
   font-family: var(--font-display);
-  font-style: normal;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.02em;
@@ -336,7 +330,6 @@ body.home-page #root {
 
 .post-content h3 {
   font-family: var(--font-display);
-  font-style: normal;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.02em;
