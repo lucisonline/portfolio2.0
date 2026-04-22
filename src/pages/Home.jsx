@@ -56,28 +56,28 @@ export default function Home() {
   return (
     <div className="home">
       <header className="home-header">
-        <h1>Hi - I&rsquo;m Luc.</h1>
+        <h1>Bonjour - I&rsquo;m Luc.</h1>
       </header>
 
       <div className="home-body">
-        <p>I&rsquo;m an Anthropologist turned Designer.</p>
+        <p>I&rsquo;m an Anthropologist + Designer.</p>
 
         <p>
-          I was born in France and grew up between Paris, Beirut, and Scotland,
+          I between Paris, Beirut, and Scotland,
           which mostly just means I&rsquo;m bad at answering &ldquo;where are you from.&rdquo;
         </p>
 
         <p>
-          Currently at{' '}
+          Currently working at{' '}
           <a href="https://criteo.com" className="company-link">
             <img src="/logos/criteo.svg" alt="" className="company-logo" />
             Criteo
-          </a>, on the Design Strategy team, working on what our AI products
-          should look like next.
+          </a>, on the Design Strategy team, building on what our AI products
+          will do next.
         </p>
 
         <p>
-          Before that,{' '}
+          Before that i was at{' '}
           <a href="https://yousign.com/" className="company-link">
             <img src="/logos/yousign.svg" alt="" className="company-logo" />
             Yousign
