@@ -248,7 +248,13 @@ body.home-page #root {
   font-family: var(--font-serif);
 }
 
-.post-sidebar .title,
+.post-sidebar .title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  font-size: 18px;
+}
+
 .post-sidebar li a,
 .post-sidebar .back {
   font-family: var(--font-serif);
