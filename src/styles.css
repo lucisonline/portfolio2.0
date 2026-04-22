@@ -76,6 +76,10 @@ body.home-page #root {
   color: var(--home-fg);
 }
 
+body.home-page #root {
+  min-height: 100vh;
+}
+
 .home {
   max-width: var(--max-prose);
   margin: 0 auto;
@@ -187,11 +191,13 @@ body.home-page #root {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-family: var(--font-serif);
-  font-weight: 700;
 }
 
 .home .writing-title a {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  font-size: 18px;
   text-decoration: none;
   color: var(--home-fg);
 }
