@@ -22,8 +22,10 @@ export default function YousignQES() {
       <p className="date">19 April, 2025</p>
 
       <img
-        src="/yousign/CleanShot_2024-12-18_at_12.56.412x.png"
+        src="/yousign/CleanShot_2024-12-18_at_12.56.412x.webp"
         alt="La Signature Électronique Qualifiée de Yousign"
+        fetchpriority="high"
+        decoding="async"
       />
 
       <h2 id="overview">Overview</h2>
@@ -66,16 +68,16 @@ export default function YousignQES() {
         </li>
       </ul>
       <p>Here is a graph with the data set:</p>
-      <img
-        src="/yousign/CleanShot_2024-12-17_at_17.32.242x.png"
+      <img loading="lazy" decoding="async"
+        src="/yousign/CleanShot_2024-12-17_at_17.32.242x.webp"
         alt="Funnel showing Ubble identifications processed, Ubble OK (86.57%), and Identity OK (74.22%)"
       />
       <p>
         We then turned to Ubble, our provider, to understand the core reasons behind
         the failed identifications.
       </p>
-      <img
-        src="/yousign/CleanShot_2024-12-17_at_16.25.562x.png"
+      <img loading="lazy" decoding="async"
+        src="/yousign/CleanShot_2024-12-17_at_16.25.562x.webp"
         alt="Stacked bar chart: invalid reasons evolution across four weekly cohorts"
       />
       <p>
@@ -88,11 +90,11 @@ export default function YousignQES() {
         I mapped the complete experience from the creation of a signature request
         (SR) to its signature.
       </p>
-      <img
-        src="/yousign/image.png"
+      <img loading="lazy" decoding="async"
+        src="/yousign/image.webp"
         alt="Customer Journey QES spanning signature request creation to signature"
       />
-      <img src="/yousign/Flow_QES.png" alt="End-to-end service blueprint of the QES flow" />
+      <img loading="lazy" decoding="async" src="/yousign/Flow_QES.webp" alt="End-to-end service blueprint of the QES flow" />
       <p className="caption">Note - some info has been blurred to respect the privacy of the company.</p>
 
       <p>
@@ -101,16 +103,16 @@ export default function YousignQES() {
       </p>
 
       <div className="research-row">
-        <img
-          src="/yousign/CleanShot_2024-12-11_at_16.33.102x.png"
+        <img loading="lazy" decoding="async"
+          src="/yousign/CleanShot_2024-12-11_at_16.33.102x.webp"
           alt="Board clustering frictions, current features, and ideas"
         />
-        <img
-          src="/yousign/387893b7-3c82-4b35-9cc1-1e16bef6a3d7.png"
+        <img loading="lazy" decoding="async"
+          src="/yousign/387893b7-3c82-4b35-9cc1-1e16bef6a3d7.webp"
           alt="Signer persona: as a signer, I have to wait for the result of my identification"
         />
-        <img
-          src="/yousign/CleanShot_2024-12-18_at_13.00.392x.png"
+        <img loading="lazy" decoding="async"
+          src="/yousign/CleanShot_2024-12-18_at_13.00.392x.webp"
           alt="Workshop sticky notes exploring parsing rules and identity-document variation"
         />
       </div>
@@ -144,14 +146,14 @@ export default function YousignQES() {
         the details the sender shared about them. Research showed signers were
         rushing through this screen, leading to mismatches with their ID.
       </p>
-      <img src="/yousign/CleanShot_2024-12-18_at_13.42.192x.png" alt="Original Verify your information screen on desktop" />
+      <img loading="lazy" decoding="async" src="/yousign/CleanShot_2024-12-18_at_13.42.192x.webp" alt="Original Verify your information screen on desktop" />
       <p className="caption">This was the legacy page.</p>
       <p>
         First attempts were mobile-first concepts that deliberately added friction to
         slow users down.
       </p>
-      <img
-        src="/yousign/CleanShot_2024-12-18_at_13.52.492x.png"
+      <img loading="lazy" decoding="async"
+        src="/yousign/CleanShot_2024-12-18_at_13.52.492x.webp"
         alt="Concept 1, Concept 2, and Concept 3 mobile-first explorations"
       />
       <p>
@@ -160,8 +162,8 @@ export default function YousignQES() {
         <em> guided attention</em> - showing signers exactly where to look on
         their ID document at the moment they needed it.
       </p>
-      <img
-        src="/yousign/CleanShot_2024-12-16_at_15.19.332x.png"
+      <img loading="lazy" decoding="async"
+        src="/yousign/CleanShot_2024-12-16_at_15.19.332x.webp"
         alt="Mobile screens highlighting where to look on a French ID for full name and separators"
       />
       <p>
@@ -170,12 +172,12 @@ export default function YousignQES() {
         Yousign. We also refined the UX writing - &ldquo;Verify your
         information&rdquo; became &ldquo;Verify your first and last name.&rdquo;
       </p>
-      <img
-        src="/yousign/CleanShot_2024-12-16_at_15.40.202x.png"
+      <img loading="lazy" decoding="async"
+        src="/yousign/CleanShot_2024-12-16_at_15.40.202x.webp"
         alt="Final desktop screen: Verify your first and last name, with example ID"
       />
-      <img
-        src="/yousign/afwef.png"
+      <img loading="lazy" decoding="async"
+        src="/yousign/afwef.webp"
         alt="Before and after comparison of the Batch 1 screens, localized per country"
       />
 
@@ -185,14 +187,14 @@ export default function YousignQES() {
         phones, expired documents. These weren&rsquo;t about the signer&rsquo;s
         identity - they were about the setup.
       </p>
-      <img
-        src="/yousign/CleanShot_2024-12-16_at_17.45.482x.png"
+      <img loading="lazy" decoding="async"
+        src="/yousign/CleanShot_2024-12-16_at_17.45.482x.webp"
         alt="Original identification start screen with a single Start verification button"
       />
       <p className="caption">Before - a single &ldquo;Start verification&rdquo; button, no pre-flight guidance.</p>
       <p>We sat down and looked at the error rates in regards to the conditions:</p>
-      <img
-        src="/yousign/CleanShot_2024-12-17_at_16.08.242x.png"
+      <img loading="lazy" decoding="async"
+        src="/yousign/CleanShot_2024-12-17_at_16.08.242x.webp"
         alt="Bar chart of identifications per month, broken down by error reason codes"
       />
       <p className="caption">For privacy reasons, the content has been blurred.</p>
@@ -208,12 +210,12 @@ export default function YousignQES() {
         including a quick Maze test - to figure out how much information to
         show and what users actually retained.
       </p>
-      <img
-        src="/yousign/CleanShot_2024-12-17_at_16.52.062x.png"
+      <img loading="lazy" decoding="async"
+        src="/yousign/CleanShot_2024-12-17_at_16.52.062x.webp"
         alt="Solutions 1 and 2: information-dense desktop layouts"
       />
-      <img
-        src="/yousign/CleanShot_2024-12-17_at_16.07.132x.png"
+      <img loading="lazy" decoding="async"
+        src="/yousign/CleanShot_2024-12-17_at_16.07.132x.webp"
         alt="Solutions 3 and 4: icon-driven card layouts"
       />
       <p>
@@ -222,8 +224,8 @@ export default function YousignQES() {
         icon-driven cards with stripped-down copy - enough to guide, not enough
         to overload. Here&rsquo;s the final version:
       </p>
-      <img
-        src="/yousign/CleanShot_2024-12-17_at_16.43.522x.png"
+      <img loading="lazy" decoding="async"
+        src="/yousign/CleanShot_2024-12-17_at_16.43.522x.webp"
         alt="Final Before starting identification screen on desktop and mobile"
       />
 
@@ -243,8 +245,8 @@ export default function YousignQES() {
         settings page. That quickly felt like noise in an already dense settings
         environment.
       </p>
-      <img
-        src="/yousign/CleanShot_2024-12-17_at_17.21.142x.png"
+      <img loading="lazy" decoding="async"
+        src="/yousign/CleanShot_2024-12-17_at_17.21.142x.webp"
         alt="Early explorations: warnings in the invitation email and in SR settings"
       />
       <p>
@@ -252,21 +254,21 @@ export default function YousignQES() {
         edit signer information directly in the settings. Here are the approaches we
         considered:
       </p>
-      <img
-        src="/yousign/QES_Err.png"
+      <img loading="lazy" decoding="async"
+        src="/yousign/QES_Err.webp"
         alt="Setting space explorations: modale to edit contact and modale to warn users"
       />
-      <img
-        src="/yousign/CleanShot_2024-12-17_at_17.22.152x.png"
+      <img loading="lazy" decoding="async"
+        src="/yousign/CleanShot_2024-12-17_at_17.22.152x.webp"
         alt="How it could work: confirmation modal listing contact names to verify"
       />
-      <img
-        src="/yousign/CleanShot_2024-12-17_at_17.22.272x.png"
+      <img loading="lazy" decoding="async"
+        src="/yousign/CleanShot_2024-12-17_at_17.22.272x.webp"
         alt="Full preparation screen with the confirmation modal shown inline"
       />
       <p>Then after much pondering, here is the final result:</p>
-      <img
-        src="/yousign/ewfwef.png"
+      <img loading="lazy" decoding="async"
+        src="/yousign/ewfwef.webp"
         alt="Batch 3 before and after: contact adding and signature level"
       />
       <p>
@@ -274,16 +276,16 @@ export default function YousignQES() {
         adding a contact, that the signer&rsquo;s name must match the one on their ID
         document.
       </p>
-      <img
-        src="/yousign/CleanShot_2024-12-18_at_12.13.322x.png"
+      <img loading="lazy" decoding="async"
+        src="/yousign/CleanShot_2024-12-18_at_12.13.322x.webp"
         alt="Before and after of the preparation screen, with When to display annotation"
       />
       <p>
         We also designed a modal that appears only when a signer&rsquo;s name could
         potentially cause an identification error due to parsing issues.
       </p>
-      <img
-        src="/yousign/CleanShot_2024-12-18_at_12.12.592x.png"
+      <img loading="lazy" decoding="async"
+        src="/yousign/CleanShot_2024-12-18_at_12.12.592x.webp"
         alt="Signature level settings with the confirmation modal shown only for risky names"
       />
       <p>

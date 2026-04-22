@@ -25,8 +25,10 @@ export default function IgnitionProgram() {
       </p>
 
       <img
-        src="/ignition/Ignition_Renders.png"
+        src="/ignition/Ignition_Renders.webp"
         alt="Ignition Program sign-up screens shown on three mobile devices"
+        fetchpriority="high"
+        decoding="async"
       />
 
       <h2 id="context">Context</h2>
@@ -73,8 +75,8 @@ export default function IgnitionProgram() {
       <p>From the interviews, we built two personas, using nicknames already in use internally at Ignition:</p>
 
       <div className="research-row">
-        <img src="/ignition/Pink.png" alt="Sarah the Shiny persona card - a young graduate discovering the tech ecosystem" />
-        <img src="/ignition/Switcher.png" alt="Sasha the Switcher persona card - an experienced professional ready for the next step" />
+        <img loading="lazy" decoding="async" src="/ignition/Pink.webp" alt="Sarah the Shiny persona card - a young graduate discovering the tech ecosystem" />
+        <img loading="lazy" decoding="async" src="/ignition/Switcher.webp" alt="Sasha the Switcher persona card - an experienced professional ready for the next step" />
       </div>
       <p className="caption">Sarah the Shiny and Sasha the Switcher.</p>
 
@@ -118,24 +120,24 @@ export default function IgnitionProgram() {
       </div>
       <p className="caption">Three distinct user flows, each asking only what&rsquo;s relevant.</p>
 
-      <img
-        src="/ignition/Screenshot_2022-10-06_at_11.46.07.png"
+      <img loading="lazy" decoding="async"
+        src="/ignition/Screenshot_2022-10-06_at_11.46.07.webp"
         alt="Parcours Classique - end-to-end user flow for the classic sign-up path"
       />
-      <img
-        src="/ignition/Screenshot_2022-10-06_at_11.46.40.png"
+      <img loading="lazy" decoding="async"
+        src="/ignition/Screenshot_2022-10-06_at_11.46.40.webp"
         alt="Parcours Chassée LEET - shorter flow for LinkedIn-sourced candidates"
       />
-      <img
-        src="/ignition/Screenshot_2022-10-06_at_11.47.32.png"
+      <img loading="lazy" decoding="async"
+        src="/ignition/Screenshot_2022-10-06_at_11.47.32.webp"
         alt="Third user flow mapping the technical candidate path"
       />
       <p>
         The flows are dense - here&rsquo;s the legend that ties the node types
         together:
       </p>
-      <img
-        src="/ignition/Screenshot_2022-10-08_at_17.34.57.png"
+      <img loading="lazy" decoding="async"
+        src="/ignition/Screenshot_2022-10-08_at_17.34.57.webp"
         alt="Legend for the user-flow diagrams: start, end, action, page, potential work, parcours LEET, state, delightzone"
       />
 
@@ -145,13 +147,13 @@ export default function IgnitionProgram() {
         before landing on the shipped design.
       </p>
       <div className="research-row">
-        <img src="/ignition/Frame_76.png" alt="V1 mid-fidelity mockups of the sign-up questions" />
-        <img src="/ignition/2.png" alt="V2 mid-fidelity mockups with clearer hierarchy and more playful visuals" />
+        <img loading="lazy" decoding="async" src="/ignition/Frame_76.webp" alt="V1 mid-fidelity mockups of the sign-up questions" />
+        <img loading="lazy" decoding="async" src="/ignition/2.webp" alt="V2 mid-fidelity mockups with clearer hierarchy and more playful visuals" />
       </div>
       <p className="caption">V1 (left) &rarr; V2 (right).</p>
       <p>And finally the high-fidelity mobile screens:</p>
-      <img
-        src="/ignition/Mobile.png"
+      <img loading="lazy" decoding="async"
+        src="/ignition/Mobile.webp"
         alt="Final high-fidelity mobile screen asking which technologies the candidate wants to work with"
       />
       <p>
@@ -159,12 +161,12 @@ export default function IgnitionProgram() {
         covering buttons, inputs, progress bar, profile picture, logo variants, CV
         upload, gradient backgrounds, and the illustration system.
       </p>
-      <img
-        src="/ignition/Screenshot_2022-10-08_at_20.00.27.png"
+      <img loading="lazy" decoding="async"
+        src="/ignition/Screenshot_2022-10-08_at_20.00.27.webp"
         alt="High-fidelity mobile UI kit - buttons, inputs, progress bar, profile picture, CV upload, gradients, illustrations"
       />
-      <img
-        src="/ignition/Screenshot_2022-10-09_at_11.47.05.png"
+      <img loading="lazy" decoding="async"
+        src="/ignition/Screenshot_2022-10-09_at_11.47.05.webp"
         alt="Color palette and typography - GT Walsheim Pro, brand, secondary, accent and neutral colors"
       />
       <p>
@@ -173,10 +175,10 @@ export default function IgnitionProgram() {
         and what comes next, without lengthening the core questionnaire.
       </p>
       <div className="research-row">
-        <img src="/ignition/Classique-1.png" alt="Onboarding screen 1 - a coach for transparency and good choices" />
-        <img src="/ignition/Classique-2.png" alt="Onboarding screen 2 - tailored help to find a fulfilling job" />
-        <img src="/ignition/Classique.png" alt="Entry screen - welcome to the application space" />
-        <img src="/ignition/Classique%201.png" alt="Off-boarding confirmation - application is on its way" />
+        <img loading="lazy" decoding="async" src="/ignition/Classique-1.webp" alt="Onboarding screen 1 - a coach for transparency and good choices" />
+        <img loading="lazy" decoding="async" src="/ignition/Classique-2.webp" alt="Onboarding screen 2 - tailored help to find a fulfilling job" />
+        <img loading="lazy" decoding="async" src="/ignition/Classique.webp" alt="Entry screen - welcome to the application space" />
+        <img loading="lazy" decoding="async" src="/ignition/Classique%201.webp" alt="Off-boarding confirmation - application is on its way" />
       </div>
 
       <p>See it in action:</p>

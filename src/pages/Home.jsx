@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import NewBadge from '../components/NewBadge.jsx'
 
 const caseStudies = [
-  { year: 2025, title: 'Yousign - Reducing errors in QES', slug: 'yousign-qes', date: '19/04', isNew: true },
-  { year: 2023, title: 'Ignition Program - Reshaping sign-up', slug: 'ignition-program', date: '18/04', isNew: true },
+  { year: 2025, title: 'Yousign - Reducing errors in QES', slug: 'yousign-qes', tagline: 'Research + Design · Mobile + Desktop', isNew: true },
+  { year: 2023, title: 'Ignition Program - Reshaping sign-up', slug: 'ignition-program', tagline: 'Research + Design · Mobile first', isNew: true },
 ]
 
 const writings = []
@@ -38,7 +38,7 @@ function PostList({ items }) {
               <Link to={`/${p.slug}`}>{p.title}</Link>
               {p.isNew && <NewBadge />}
             </div>
-            <div className="writing-date">{p.date}</div>
+            <div className="writing-tagline">{p.tagline}</div>
           </div>
         )
       })}
