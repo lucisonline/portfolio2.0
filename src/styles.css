@@ -183,9 +183,10 @@ body.home-page #root {
 }
 
 .home .writing-year {
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
   color: rgba(251, 251, 251, 0.6);
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .home .writing-title {
@@ -210,8 +211,9 @@ body.home-page #root {
 
 .home .writing-date {
   color: rgba(251, 251, 251, 0.6);
-  font-family: var(--font-serif);
-  font-size: 16px;
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+  font-size: 18px;
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
