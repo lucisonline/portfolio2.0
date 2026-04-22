@@ -228,28 +228,10 @@ body.home-page #root {
 .home .writing-tagline {
   color: rgba(251, 251, 251, 0.75);
   font-family: var(--font-hand);
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1;
   text-align: right;
-}
-
-.new-badge {
-  position: relative;
-  color: var(--accent);
-  font-family: var(--font-hand);
-  font-size: 22px;
-  font-weight: 500;
-  padding: 0 8px;
-  line-height: 1;
-}
-
-.new-badge svg {
-  position: absolute;
-  inset: -4px -2px;
-  width: calc(100% + 4px);
-  height: calc(100% + 8px);
-  pointer-events: none;
 }
 
 /* ---------- Post layout ---------- */
@@ -366,6 +348,7 @@ body.home-page #root {
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 0.02em;
+  line-height: 1.4;
   margin: 0 0 2px;
   color: var(--home-bg);
 }

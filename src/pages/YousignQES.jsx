@@ -19,7 +19,7 @@ export default function YousignQES() {
         <h1>Yousign - Reducing errors in the QES flow</h1>
         <span className="post-tags">Research + Design &middot; Mobile + Desktop</span>
       </div>
-      <p className="date">19 April, 2025</p>
+      <p className="date">February 2025</p>
 
       <img
         src="/yousign/CleanShot_2024-12-18_at_12.56.412x.webp"

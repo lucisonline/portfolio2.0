@@ -1,10 +1,9 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import NewBadge from '../components/NewBadge.jsx'
 
 const caseStudies = [
-  { year: 2025, title: 'Yousign - Reducing errors in QES', slug: 'yousign-qes', tagline: 'Research + Design · Mobile + Desktop', isNew: true },
-  { year: 2023, title: 'Ignition Program - Reshaping sign-up', slug: 'ignition-program', tagline: 'Research + Design · Mobile first', isNew: true },
+  { year: 2025, title: 'Yousign - Reducing errors in QES', slug: 'yousign-qes', tagline: 'Research + Design · Mobile + Desktop' },
+  { year: 2023, title: 'Ignition Program - Reshaping sign-up', slug: 'ignition-program', tagline: 'Research + Design · Mobile first' },
 ]
 
 const writings = []
@@ -36,7 +35,6 @@ function PostList({ items }) {
             <div className="writing-year">{showYear ? p.year : ''}</div>
             <div className="writing-title">
               <Link to={`/${p.slug}`}>{p.title}</Link>
-              {p.isNew && <NewBadge />}
             </div>
             <div className="writing-tagline">{p.tagline}</div>
           </div>
