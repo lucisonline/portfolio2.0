@@ -7,7 +7,7 @@ export default function PostLayout({ title, sections, children }) {
       <aside className="post-sidebar">
         <Link to="/" className="back">&#8617; Index</Link>
         <div className="title">{title}</div>
-        <details className="post-toc">
+        <details className="post-toc" open>
           <summary>On this page</summary>
           <ul>
             {sections.map((s) => (
