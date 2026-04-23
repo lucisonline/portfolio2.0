@@ -12,7 +12,7 @@ const sections = [
 
 export default function IgnitionProgram() {
   return (
-    <PostLayout title="Ignition Program - Reshaping sign-up" sections={sections}>
+    <PostLayout sections={sections}>
       <div className="post-title-row">
         <h1>Ignition Program - Reshaping the sign-up</h1>
         <span className="post-tags">Research + Design &middot; Mobile first</span>

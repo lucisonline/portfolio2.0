@@ -25,13 +25,9 @@ function PostList({ items }) {
     <>
       {items.map((p) => {
         const showYear = p.year !== lastYear
-        const isYearBreak = lastYear !== null && showYear
         lastYear = p.year
         return (
-          <div
-            key={p.slug}
-            className={`writing-row${isYearBreak ? ' year-break' : ''}`}
-          >
+          <div key={p.slug} className="writing-row">
             <div className="writing-year">{showYear ? p.year : ''}</div>
             <div className="writing-title">
               <Link to={`/${p.slug}`}>{p.title}</Link>

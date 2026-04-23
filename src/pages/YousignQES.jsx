@@ -14,7 +14,7 @@ const sections = [
 
 export default function YousignQES() {
   return (
-    <PostLayout title="Yousign - Reducing errors in QES" sections={sections}>
+    <PostLayout sections={sections}>
       <div className="post-title-row">
         <h1>Yousign - Reducing errors in the QES flow</h1>
         <span className="post-tags">Research + Design &middot; Mobile + Desktop</span>

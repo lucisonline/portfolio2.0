@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-export default function PostLayout({ title, sections, children }) {
+export default function PostLayout({ sections, children }) {
   return (
     <article className="post">
       <a href="#post-content" className="skip-link">Skip to content</a>

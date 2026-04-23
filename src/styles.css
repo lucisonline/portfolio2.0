@@ -540,10 +540,6 @@ body.home-page #root {
   .home {
     padding: 48px 24px 80px;
   }
-  .writing-row {
-    grid-template-columns: 50px 1fr auto;
-    gap: 16px;
-  }
 }
 
 @media (max-width: 600px) {
@@ -587,12 +583,6 @@ body.home-page #root {
   .home .writing-year {
     grid-area: year;
     font-size: 15px;
-  }
-
-  .home .writing-tagline {
-    grid-area: tagline;
-    font-size: 18px;
-    text-align: left;
   }
 
   .home .writing-title {
