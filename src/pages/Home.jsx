@@ -106,8 +106,8 @@ export default function Home() {
 
         <p>
           You can reach me on{' '}
-          <a href="https://www.linkedin.com/in/lucaractingi/">LinkedIn</a>,{' '}
-          <a href="https://instagram.com">Instagram</a>, or by{' '}
+          <a href="https://www.linkedin.com/in/lucaractingi/">LinkedIn</a>{' '}
+          or by{' '}
           <a href="mailto:luc.aractingi@gmail.com">email</a>.
         </p>
 
