@@ -113,7 +113,8 @@ body.home-page #root {
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 0.02em;
-  margin: 0 0 24px;
+  line-height: 1.6;
+  margin: 0 0 8px;
   color: var(--home-fg);
 }
 
@@ -124,6 +125,10 @@ body.home-page #root {
   line-height: 1.6;
   letter-spacing: 0;
   color: var(--home-fg);
+}
+
+.home-body p {
+  margin: 0 0 16px;
 }
 
 .home-body .updated {
@@ -143,8 +148,8 @@ body.home-page #root {
   display: inline-block;
   width: 1.15em;
   height: 1.15em;
-  margin-right: 6px;
-  border-radius: 3px;
+  margin-right: 8px;
+  border-radius: 4px;
   object-fit: contain;
   vertical-align: -0.2em;
 }
@@ -194,7 +199,7 @@ body.home-page #root {
     'year title'
     '.    tagline';
   align-items: center;
-  gap: 6px 24px;
+  gap: 8px 24px;
   padding: 16px 0;
   border-bottom: 1px solid rgba(251, 251, 251, 0.3);
 }
@@ -555,7 +560,7 @@ body.home-page #root {
   }
 
   .home {
-    padding: 40px 20px 64px;
+    padding: 40px 24px 64px;
   }
 
   .home .writing-tabs {
@@ -577,7 +582,7 @@ body.home-page #root {
       'title'
       'tagline';
     gap: 4px 12px;
-    padding: 14px 0;
+    padding: 16px 0;
   }
 
   .home .writing-year {

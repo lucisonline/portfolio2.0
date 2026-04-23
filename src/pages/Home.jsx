@@ -52,15 +52,15 @@ export default function Home() {
   return (
     <div className="home">
       <header className="home-header">
-        <h1>Bonjour! my name is Luc</h1>
+        <h1>Bonjour!<br />my name is Luc</h1>
       </header>
 
       <div className="home-body">
-        <p>I&rsquo;m an Anthropologist + Designer.</p>
+        <p>I&rsquo;m an Anthropologist turned Designer.</p>
 
         <p>
           I grew up between Paris, Beirut, and Scotland,
-          which mostly just means I&rsquo;m bad at answering &ldquo;where are you from.&rdquo;
+          so &ldquo;where are you from?&rdquo; usually turns into a story.
         </p>
 
         <p>
