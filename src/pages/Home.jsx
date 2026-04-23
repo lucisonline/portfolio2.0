@@ -68,12 +68,24 @@ export default function Home() {
         </p>
 
         <p>
-          Currently working at{' '}
+          Now at{' '}
           <a href="https://criteo.com" className="company-link">
-            <img src="/logos/criteo.svg" alt="" className="company-logo" />
+            <svg
+              className="company-logo"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 32 32"
+              fill="none"
+              aria-hidden="true"
+            >
+              <rect width="32" height="32" rx="4" fill="#FE5000" />
+              <path
+                d="M24 16C24 20.4183 20.4183 24 16 24C11.5817 24 8 20.4183 8 16C8 11.5817 11.5817 8 16 8C20.4183 8 24 11.5817 24 16Z"
+                fill="white"
+              />
+            </svg>
             Criteo
-          </a>, on the Design Strategy team, building on what our AI products
-          will do next.
+          </a>, on the Design Strategy team, working on what&rsquo;s next
+          for our AI products.
         </p>
 
         <p>

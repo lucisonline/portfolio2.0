@@ -1,6 +1,5 @@
-<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <g transform="translate(22 2) scale(2.2)">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.5873 0.886719C32.8662 0.886719 34.6978 2.73613 34.7157 5.0151C34.7455 8.27247 31.3211 9.84152 28.7736 7.47306C25.7072 4.62733 23.6728 8.57674 23.6668 8.51112C23.6251 6.47675 25.8444 0.886719 30.5873 0.886719Z" fill="#B5EF03"/>
-  </g>
-  <text x="50" y="82" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="700" fill="#1F398B">iP</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-label="Ignition Program logo">
+  <rect width="32" height="32" rx="6" fill="#1F398B"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2 5.8c2.2 0 3.95 1.78 3.97 3.97.03 3.14-3.27 4.65-5.72 2.37-2.95-2.74-4.91 1.06-4.91.99-.04-1.96 2.1-7.33 6.66-7.33z" fill="#B5EF03"/>
+  <text x="16" y="27" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" font-weight="700" fill="#fff">iP</text>
 </svg>
