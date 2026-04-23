@@ -251,13 +251,6 @@ body.home-page #root {
   font-family: var(--font-serif);
 }
 
-.post-sidebar .title {
-  font-family: var(--font-display);
-  font-weight: 400;
-  letter-spacing: 0.02em;
-  font-size: 18px;
-}
-
 .post-sidebar li a,
 .post-sidebar .back {
   font-family: var(--font-serif);
@@ -281,18 +274,6 @@ body.home-page #root {
 
 .post-sidebar .back:hover {
   color: var(--text);
-}
-
-.post-sidebar .title {
-  color: var(--home-bg);
-  font-weight: 400;
-  margin-bottom: 16px;
-}
-
-@media (min-width: 901px) {
-  .post-sidebar .title {
-    display: none;
-  }
 }
 
 .post-sidebar ul {
