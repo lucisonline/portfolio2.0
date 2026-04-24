@@ -109,7 +109,7 @@ function TakeHome() {
 
       <section className="takehome-q">
         <h2 className="takehome-question">3) What operating principle or cultural thing have you loved from your past experiences?</h2>
-        <p className="takehome-answer">Two things have really stuck with me from my time at Yousign.</p>
+        <p className="takehome-answer">Three things have really stuck with me from my time at Yousign.</p>
         <ol className="takehome-answer takehome-list">
           <li>
             "Strong opinions, loosely held." I love that it pushes you to show up with a clear point of view and defend
@@ -121,8 +121,8 @@ function TakeHome() {
             conversations.
           </li>
           <li>
-            From Ed our current CCO who used to work at Amazon - <em>first day principle</em> allows to build with an
-            open heart and fresh mind every time.
+            From Ed our current CCO who used to work at Amazon - <em>first day principle</em> invites you to build with
+            an open heart and fresh mind every time.
           </li>
         </ol>
       </section>
