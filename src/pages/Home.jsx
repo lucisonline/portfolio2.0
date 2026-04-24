@@ -59,6 +59,11 @@ export default function Home() {
         <p>I&rsquo;m an Anthropologist turned Designer.</p>
 
         <p>
+          I drive product design from insight to impact -
+          research, strategy, and shipped product.
+        </p>
+
+        <p>
           I grew up between Paris, Beirut, and Scotland,
           so &ldquo;where are you from?&rdquo; usually turns into a story.
         </p>
@@ -101,7 +106,7 @@ export default function Home() {
         </p>
 
         <p>
-          You can reach me on{' '}
+          You can reach me - let&rsquo;s build together - on{' '}
           <a href="https://www.linkedin.com/in/lucaractingi/">LinkedIn</a>{' '}
           or by{' '}
           <a href="mailto:luc.aractingi@gmail.com">email</a>.

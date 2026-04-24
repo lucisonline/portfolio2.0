@@ -9,7 +9,6 @@ const sections = [
   'Batch 2 - Condition errors',
   'Batch 3 - Sender-side data',
   'Results',
-  'Reflections',
 ]
 
 export default function YousignQES() {
@@ -307,24 +306,28 @@ export default function YousignQES() {
         <Stat value="+10%" label="Overall completion rate" />
       </div>
       <p>
-        Small copy changes carried real weight - &ldquo;Verify your first and
-        last name&rdquo; gave users the confidence to move through the step
-        correctly. Adding gentle friction at the right moments prevented errors
-        without making the flow feel heavier.
-      </p>
-
-      <h2 id="reflections">Reflections</h2>
-      <p>
-        Cross-functional collaboration was central - Customer Care surfaced the
-        real friction, Engineering defined what was possible within the legacy
-        constraints, and Brand shaped how the guidance felt. Iteration was the only
-        way through: without A/B testing, every release had to be measured, observed,
-        and refined in production.
+        Redesigning the QES flow made a real difference. We reduced identity
+        verification errors by 20% and improved conditions-based issues, like
+        poor lighting or outdated devices, by 15%. These changes not only saved
+        costs for our customers but also made the process smoother and more
+        trustworthy. Fewer failed attempts meant happier users and less stress
+        for everyone involved.
       </p>
       <p>
-        The core lesson: the right amount of friction, placed at the right moment,
-        reduces errors more effectively than either stripping friction out or piling
-        it on.
+        One of the biggest wins was a 10% increase in completion rates. The key?
+        Clearer, more thoughtful guidance. Simple changes like &ldquo;Verify
+        your first and last name&rdquo; instead of &ldquo;Verify your
+        information&rdquo; gave users the confidence to move through the process
+        without mistakes. Adding gentle friction—like nudging users to
+        double-check their details—helped prevent errors while still keeping the
+        flow intuitive.
+      </p>
+      <p>
+        Collaboration was at the heart of this project. Working closely with
+        Customer Care, Engineering, and Brand teams helped us create solutions
+        that worked not just for users but for the business too. Testing and
+        iteration were vital—we refined each step based on real feedback to
+        ensure we were solving the right problems in the right way.
       </p>
     </PostLayout>
   )
