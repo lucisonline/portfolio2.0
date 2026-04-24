@@ -46,9 +46,9 @@ export default function PasswordGate({ hash, storageKey, children }) {
   return (
     <div className="gate">
       <form className="gate-form" onSubmit={onSubmit}>
-        <p className="gate-intro">
-          Hello, welcome to my portfolio case study. Please insert the password.
-        </p>
+        <p className="gate-intro">Hello</p>
+        <p className="gate-intro">Welcome to my case study</p>
+        <p className="gate-intro">Please insert the password</p>
         <label className="gate-label" htmlFor="gate-password">Password</label>
         <input
           id="gate-password"
