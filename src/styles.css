@@ -243,6 +243,234 @@ body.home-page #root {
   text-align: left;
 }
 
+/* ---------- Password gate ---------- */
+
+.gate {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+  color: var(--home-fg);
+}
+
+.gate-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 280px;
+}
+
+.gate-label {
+  font-family: var(--font-display);
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--home-fg);
+}
+
+.gate-input {
+  font: inherit;
+  font-family: var(--font-serif);
+  font-size: 16px;
+  padding: 10px 12px;
+  background: transparent;
+  border: 1px solid rgba(251, 251, 251, 0.5);
+  border-radius: 6px;
+  color: var(--home-fg);
+}
+
+.gate-input:focus {
+  outline: none;
+  border-color: var(--home-fg);
+}
+
+.gate-submit {
+  font: inherit;
+  font-family: var(--font-display);
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 10px 14px;
+  background: var(--home-fg);
+  color: var(--home-bg);
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.gate-submit:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.gate-submit:not(:disabled):hover {
+  opacity: 0.85;
+}
+
+.gate-error {
+  font-family: var(--font-hand);
+  font-size: 18px;
+  color: rgba(251, 251, 251, 0.85);
+  margin: 4px 0 0;
+}
+
+/* ---------- Take home ---------- */
+
+.takehome {
+  max-width: var(--max-prose);
+  margin: 0 auto;
+  padding: 96px 32px 120px;
+  color: var(--home-fg);
+}
+
+.takehome a {
+  color: var(--home-fg);
+}
+
+.takehome-header h1 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin: 0 0 72px;
+  color: var(--home-fg);
+}
+
+.takehome-q {
+  margin: 0 0 56px;
+}
+
+.takehome-question {
+  font-family: var(--font-hand);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.25;
+  letter-spacing: 0;
+  margin: 0 0 8px;
+  color: var(--home-fg);
+}
+
+.takehome-answer {
+  font-family: var(--font-serif);
+  font-weight: 465;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 0 10px;
+  color: var(--home-fg);
+}
+
+.card-stack {
+  --card-h: 320px;
+  position: relative;
+  width: 100%;
+  min-height: calc(var(--card-h) * 1.6);
+  margin: 16px auto 20px;
+}
+
+.card-stack-slot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-stack-card {
+  display: block;
+  height: var(--card-h);
+  width: auto;
+  max-width: min(88vw, 900px);
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: transparent;
+  box-shadow:
+    0 22px 50px rgba(10, 10, 20, 0.28),
+    0 6px 14px rgba(10, 10, 20, 0.16),
+    0 0 0 1px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  will-change: transform;
+  font: inherit;
+  color: inherit;
+}
+
+.card-stack-card:focus-visible {
+  outline: 2px solid rgba(0, 0, 0, 0.55);
+  outline-offset: 3px;
+}
+
+.card-stack-card img {
+  display: block;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.card-stack-placeholder {
+  width: calc(var(--card-h) * 1.4);
+  height: 100%;
+  background: rgba(230, 230, 232, 0.9);
+}
+
+.takehome-studies {
+  margin: 28px 0 0;
+}
+
+.takehome-studies-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--home-fg);
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(251, 251, 251, 0.3);
+  margin: 0;
+}
+
+.takehome-study-row {
+  display: grid;
+  grid-template-columns: 80px minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 24px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(251, 251, 251, 0.3);
+}
+
+.takehome-study-year {
+  font-family: var(--font-display);
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: rgba(251, 251, 251, 0.6);
+}
+
+.takehome-study-title a {
+  font-family: var(--font-display);
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--home-fg);
+}
+
+.takehome-study-title a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.takehome-study-tagline {
+  font-family: var(--font-hand);
+  font-size: 18px;
+  color: rgba(251, 251, 251, 0.75);
+  line-height: 1;
+  text-align: right;
+}
+
 /* ---------- Post layout ---------- */
 
 .post {
@@ -364,9 +592,10 @@ body.home-page #root {
 .post-title-row {
   display: flex;
   align-items: baseline;
-  gap: 20px;
+  column-gap: 20px;
+  row-gap: 4px;
   flex-wrap: wrap;
-  margin: 0 0 2px;
+  margin: 0 0 4px;
 }
 
 .post-title-row h1 {
@@ -545,6 +774,9 @@ body.home-page #root {
   .home {
     padding: 48px 24px 80px;
   }
+  .takehome {
+    padding: 48px 24px 80px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -701,6 +933,38 @@ body.home-page #root {
   .callout {
     padding: 12px 14px;
     font-size: 14px;
+  }
+
+  .takehome {
+    padding: 40px 24px 64px;
+  }
+
+  .takehome-header h1 {
+    margin: 0 0 48px;
+  }
+
+  .takehome-question {
+    font-size: 26px;
+  }
+
+  .card-stack {
+    --card-h: 220px;
+  }
+
+  .takehome-study-row {
+    grid-template-columns: 56px 1fr;
+    grid-template-areas:
+      'year title'
+      '.    tagline';
+    row-gap: 4px;
+    column-gap: 16px;
+  }
+
+  .takehome-study-year { grid-area: year; }
+  .takehome-study-title { grid-area: title; }
+  .takehome-study-tagline {
+    grid-area: tagline;
+    text-align: left;
   }
 }
 

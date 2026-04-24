@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import Home from './pages/Home.jsx'
 import YousignQES from './pages/YousignQES.jsx'
 import IgnitionProgram from './pages/IgnitionProgram.jsx'
+import TakeHome from './pages/TakeHome.jsx'
 
 const pageVariants = {
   initial: { opacity: 0, y: 8 },
@@ -26,6 +27,7 @@ export default function App() {
         <Route path="/" element={<Page><Home /></Page>} />
         <Route path="/yousign-qes" element={<Page><YousignQES /></Page>} />
         <Route path="/ignition-program" element={<Page><IgnitionProgram /></Page>} />
+        <Route path="/th-7k9a2xq4" element={<Page><TakeHome /></Page>} />
       </Routes>
     </AnimatePresence>
   )
