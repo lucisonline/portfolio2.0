@@ -330,6 +330,10 @@ body.home-page #root {
 }
 
 .takehome-header h1 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
   font-family: var(--font-display);
   font-size: 18px;
   font-weight: 400;
@@ -338,6 +342,21 @@ body.home-page #root {
   text-transform: uppercase;
   margin: 0 0 72px;
   color: var(--home-fg);
+}
+
+.takehome-header-x {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: 0;
+  opacity: 0.7;
+}
+
+.takehome-header-logo {
+  width: 28px;
+  height: 28px;
+  display: block;
 }
 
 .takehome-q {

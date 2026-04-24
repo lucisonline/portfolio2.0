@@ -105,8 +105,10 @@ export default function Home() {
           </a>.
         </p>
 
+        <p>Let&rsquo;s build together.</p>
+
         <p>
-          You can reach me - let&rsquo;s build together - on{' '}
+          You can reach me on{' '}
           <a href="https://www.linkedin.com/in/lucaractingi/">LinkedIn</a>{' '}
           or by{' '}
           <a href="mailto:luc.aractingi@gmail.com">email</a>.

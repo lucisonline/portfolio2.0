@@ -43,7 +43,12 @@ function TakeHome() {
   return (
     <div className="takehome">
       <header className="takehome-header">
-        <h1>Hello — I&rsquo;m Luc and this is my take home assignment</h1>
+        <h1>
+          <span>Take home assignment - Luc</span>
+          <span aria-hidden="true" className="takehome-header-x">×</span>
+          <img src="/logos/dust.svg" alt="Dust" className="takehome-header-logo" />
+          <span>Dust</span>
+        </h1>
       </header>
 
       <section className="takehome-q">
