@@ -56,20 +56,12 @@ export default function Home() {
       </header>
 
       <div className="home-body">
-        <p>I&rsquo;m an Anthropologist turned Designer.</p>
+        <p>Anthropologist turned Designer.</p>
+
+        <p>I study how people behave, then design impactful products around that.</p>
 
         <p>
-          I drive product design from insight to impact -
-          research, strategy, and shipped product.
-        </p>
-
-        <p>
-          I grew up between Paris, Beirut, and Scotland,
-          so &ldquo;where are you from?&rdquo; usually turns into a story.
-        </p>
-
-        <p>
-          Now at{' '}
+          Right now I&rsquo;m shaping AI tools for advertising at{' '}
           <a href="https://criteo.com" className="company-link">
             <svg
               className="company-logo"
@@ -85,30 +77,28 @@ export default function Home() {
               />
             </svg>
             Criteo
-          </a>, on the Design Strategy team, working on what&rsquo;s next
-          for our AI products.
-        </p>
-
-        <p>
-          Before that i was at{' '}
+          </a>. Before that: e-signatures at{' '}
           <a href="https://yousign.com/" className="company-link">
             <img src="/logos/yousign.svg" alt="" className="company-logo" />
             Yousign
-          </a>,{' '}
+          </a>, apprenticeship tech at{' '}
           <a href="https://www.multiverse.io/en-GB" className="company-link">
             <img src="/logos/multiverse.svg" alt="" className="company-logo" />
             Multiverse
-          </a>, and{' '}
+          </a>, and recruitment at{' '}
           <a href="https://ignition-program.com/" className="company-link">
             <img src="/logos/ignition-program.svg" alt="" className="company-logo" />
             Ignition Program
           </a>.
         </p>
 
-        <p>Let&rsquo;s build together.</p>
+        <p>
+          I grew up between Paris, Beirut, and Scotland,
+          so &ldquo;where are you from?&rdquo; usually turns into a story.
+        </p>
 
         <p>
-          You can reach me on{' '}
+          Say hi on{' '}
           <a href="https://www.linkedin.com/in/lucaractingi/">LinkedIn</a>{' '}
           or by{' '}
           <a href="mailto:luc.aractingi@gmail.com">email</a>.

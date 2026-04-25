@@ -56,10 +56,14 @@ function TakeHome() {
       </header>
 
       <section className="takehome-q">
+        <p className="takehome-answer">I'm drawn to Dust because I think the best AI tools won't just automate workflows — they'll reshape how people think alongside machines. That's the design problem I want to spend the next few years on.</p>
+        <p className="takehome-answer">Four questions below. My strongest work at Criteo is under NDA, but I'm happy to walk through it live.</p>
+      </section>
+
+      <section className="takehome-q">
         <h2 className="takehome-question">1) Show us your best work in terms of UI.</h2>
-        <p className="takehome-answer">Here is a carousel of some of my UI work at Yousign and Ignition.</p>
+        <p className="takehome-answer">Two case studies from Yousign and Ignition Program, where I owned research through shipped product.</p>
         <CardStack items={uiCarousel} />
-        <p className="takehome-answer">You can have a full look at the case studies here:</p>
 
         <div className="takehome-studies">
           <div className="takehome-studies-title">Case studies</div>
@@ -77,54 +81,46 @@ function TakeHome() {
             )
           })}
         </div>
-        <p className="takehome-answer">I'd flag that the work I've been shipping this year - an AI assistant layer we're rolling into Criteo's platforms - is the strongest representation of <em>where I am now</em>, but I can't share it publicly. Happy to walk through it live if we get to that stage.</p>
+        <p className="takehome-answer">The work I'm most proud of right now is the AI assistant layer we've been building into Criteo's platform this year. It's the closest representation of where I am as a designer. I can't share it publicly, but I'd welcome the chance to walk through it if we get to that stage.</p>
       </section>
 
       <section className="takehome-q">
         <h2 className="takehome-question">2) What has been some constructive feedback in your career?</h2>
         <p className="takehome-answer">
-          My role at Criteo is to hold vision, designing two or three years out to shape how AI gets built into the
-          platform.
+          At Criteo, I design two or three years ahead of the product: what AI should do for our clients, how it should
+          surface in the platform, what the interaction model looks like. That means I spend a lot of time in rooms where
+          the thinking matters as much as the output. For a while, I didn't make enough space for that.
         </p>
         <p className="takehome-answer">
-          But how I bring that thinking into a room <em>matters as much as the thinking itself</em>.
+          Two things changed it. The first is real active listening — not nodding while I wait to talk, but actually
+          letting what someone says change my direction. The second is something Michael Bungay Stanier calls the{' '}
+          <em>advice monster</em>: the reflex to jump in with a solution when the better move is one more question.
+          Naming it made it easier to catch.
         </p>
         <p className="takehome-answer">
-          I used to arrive fully formed, analysis done, answer clear, which at times closes imagination rather than
-          opening conversation.
-        </p>
-        <p className="takehome-answer">Two things have changed that.</p>
-        <ol className="takehome-answer takehome-list">
-          <li>Real active listening, not just nodding.</li>
-          <li>
-            What Michael Bungay Stanier calls the <em>advice monster</em>, the reflex to jump in with a solution when
-            the better move is one more question. Naming it made it easier to catch.
-          </li>
-        </ol>
-        <p className="takehome-answer">
-          Vision is only useful once other people can <em>hold it in their own words</em>. That's the work I'm doing
-          now.
+          Vision only matters once other people can hold it <em>in their own words</em>. That's the work I'm doing now.
         </p>
       </section>
 
       <section className="takehome-q">
         <h2 className="takehome-question">3) What operating principle or cultural thing have you loved from your past experiences?</h2>
-        <p className="takehome-answer">Three things have really stuck with me from my time at Yousign.</p>
-        <ol className="takehome-answer takehome-list">
-          <li>
-            "Strong opinions, loosely held." I love that it pushes you to show up with a clear point of view and defend
-            it, while staying genuinely open to being convinced otherwise.
-          </li>
-          <li>
-            <em>Salary transparency</em>. It sounds simple, but it changes so much: it builds trust, engages the company
-            to be fair and intentional about compensation, and takes the awkwardness and guesswork out of career
-            conversations.
-          </li>
-          <li>
-            From Ed our current CCO who used to work at Amazon - <em>first day principle</em> invites you to build with
-            an open heart and fresh mind every time.
-          </li>
-        </ol>
+        <p className="takehome-answer">Three things from past roles that still shape how I work.</p>
+        <p className="takehome-answer">
+          <strong>"Strong opinions, loosely held."</strong> It pushes you to commit to a clear point of view and defend
+          it, while staying genuinely open to being convinced otherwise. That tension — between conviction and flexibility
+          — is where the best design decisions happen.
+        </p>
+        <p className="takehome-answer">
+          <strong>Salary transparency.</strong> It sounds simple, but it changes so much. It builds trust, forces the
+          company to be fair and intentional about compensation, and removes the guesswork and awkwardness from career
+          conversations.
+        </p>
+        <p className="takehome-answer">
+          <strong>First-day principle.</strong> This one comes from Ed, our current CCO, who worked at Amazon. The idea
+          is to approach every day of work with the openness and curiosity you had on your first day. Fresh mind, no
+          assumptions, no territory to defend. I find it's a useful corrective for the kind of pattern-matching that
+          hardens into rigidity over time.
+        </p>
       </section>
 
       <section className="takehome-q">
@@ -133,18 +129,18 @@ function TakeHome() {
         <div className="takehome-ai-grid">
           <div className="takehome-ai-text">
             <p className="takehome-answer">
-              Generative UI, more specifically interfaces and imagery that don't pre-exist, but get created with
-              personal queries and context.
+              Generative UI. Not chatbots or co-pilots, but interfaces and imagery that don't pre-exist — that get
+              created with personal queries and context.
             </p>
 
             <p className="takehome-answer">
-              I was very touched recently by Flipbook,{' '}
+              Flipbook is the clearest example I've seen:{' '}
               <span className="takehome-ai-quote">a generative visual internet</span> that doesn't assemble pages from
-              components but generates the imagery itself, live.
+              components but generates the imagery itself, live. It's not a tool. It's closer to a medium.
             </p>
 
             <p className="takehome-answer">
-              I sense this work is inspired by{' '}
+              I think this work is downstream of what{' '}
               <a
                 href={INKSWITCH_URL}
                 target="_blank"
@@ -156,11 +152,13 @@ function TakeHome() {
               >
                 Ink &amp; Switch
               </a>
-              , who've been exploring <em>malleable software</em>, shaped by users rather than the other way around.
+              {' '}has been exploring with <em>malleable software</em>: interfaces shaped by their users rather than
+              shipped to them. The designer's role shifts from composing screens to designing the system that generates
+              them.
             </p>
 
             <p className="takehome-answer">
-              It leaves me thinking about the future of my role, and what it looks like to design with{' '}
+              It leaves me thinking about what it looks like to design with{' '}
               <a
                 href={AMODEI_URL}
                 target="_blank"
@@ -172,7 +170,7 @@ function TakeHome() {
               >
                 <em>machines of loving grace</em>
               </a>
-              .
+              . That's the phrase, and the question, I keep coming back to.
             </p>
           </div>
 
@@ -230,9 +228,8 @@ function TakeHome() {
         </div>
 
         <div className="takehome-closing">
-          <p>Thank you for your time !</p>
           <p>
-            As always, you can reach me with any question on{' '}
+            If any of this sparks questions, I'm on{' '}
             <a
               href="https://www.linkedin.com/in/lucaractingi/"
               target="_blank"
@@ -240,11 +237,19 @@ function TakeHome() {
             >
               LinkedIn
             </a>{' '}
-            or by{' '}
+            or reachable by{' '}
             <a href="mailto:luc.aractingi@gmail.com">email</a>.
           </p>
-          <p>With warmth,</p>
-          <p>Luc</p>
+          <p>
+            <a
+              href={AMODEI_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="takehome-ai-ink"
+            >
+              <em>machines of loving grace</em>
+            </a>
+          </p>
         </div>
       </section>
     </div>
