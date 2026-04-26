@@ -20,7 +20,7 @@
   --font-serif: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
   --font-display: 'Caracteres L1', 'Inter', sans-serif;
   --font-hand: 'Caveat', cursive;
-  --home-bg: #1F398F;
+  --home-bg: #002FA7;
   --home-fg: #FBFBFB;
   --max-prose: 640px;
 }
@@ -593,7 +593,7 @@ ol.takehome-list li::marker {
   width: 100%;
   aspect-ratio: 16 / 10;
   overflow: hidden;
-  background: linear-gradient(135deg, #2a1a3f 0%, #1F398F 50%, #f0b15a 100%);
+  background: linear-gradient(135deg, #2a1a3f 0%, #002FA7 50%, #f0b15a 100%);
   background-size: 200% 200%;
   animation: takehome-drift 12s ease-in-out infinite;
 }
