@@ -170,7 +170,7 @@ function TakeHome() {
               >
                 <em>machines of loving grace</em>
               </a>
-              . That's the phrase, and the question, I keep coming back to.
+.
             </p>
           </div>
 
