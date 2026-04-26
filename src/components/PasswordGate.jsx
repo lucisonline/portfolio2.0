@@ -49,7 +49,6 @@ export default function PasswordGate({ hash, storageKey, children }) {
         <p className="gate-intro">Hello</p>
         <p className="gate-intro">Welcome to my case study</p>
         <p className="gate-intro">Please insert the password</p>
-        <label className="gate-label" htmlFor="gate-password">Password</label>
         <input
           id="gate-password"
           className="gate-input"
