@@ -9,9 +9,9 @@ const INKSWITCH_URL = 'https://www.inkandswitch.com/'
 const INKSWITCH_IMG = 'https://www.inkandswitch.com/assets/images/ink-and-switch-og.png'
 const AMODEI_URL = 'https://www.darioamodei.com/essay/machines-of-loving-grace'
 
-// sha256("lucgotthejob")
+// sha256("Luc@Dust")
 // Change password: run `node -e 'const c=require("crypto"); console.log(c.createHash("sha256").update("NEW_PW").digest("hex"))'`
-const PASSWORD_HASH = 'a4de26d4501d7c8490b9eaaea6a8eebf9eeab01bbbcd5a63c4b9bcd2d6bab17d'
+const PASSWORD_HASH = 'eed9d5e0a1abd8994487b4fccfae2293221bdcc024711d5aff26eccc9ce45bd6'
 
 const caseStudies = [
   { year: 2025, title: 'Yousign — Reducing errors in QES', slug: 'yousign-qes', tagline: 'Research + Design · Mobile + Desktop' },
