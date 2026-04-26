@@ -14,16 +14,16 @@ const AMODEI_URL = 'https://www.darioamodei.com/essay/machines-of-loving-grace'
 const PASSWORD_HASH = 'eed9d5e0a1abd8994487b4fccfae2293221bdcc024711d5aff26eccc9ce45bd6'
 
 const caseStudies = [
-  { year: 2025, title: 'Yousign — Reducing errors in QES', slug: 'yousign-qes', tagline: 'Research + Design · Mobile + Desktop' },
-  { year: 2023, title: 'Ignition Program — Reshaping sign-up', slug: 'ignition-program', tagline: 'Research + Design · Mobile first' },
+  { year: 2025, title: 'Yousign - Reducing errors in QES', slug: 'yousign-qes', tagline: 'Research + Design · Mobile + Desktop' },
+  { year: 2023, title: 'Ignition Program - Reshaping sign-up', slug: 'ignition-program', tagline: 'Research + Design · Mobile first' },
 ]
 
 const uiCarousel = [
-  { src: '/takehome/CleanShot%20Dec%2017%20from%20Portfolio%20Copy.png', alt: 'Yousign — Verify your first and last name screen' },
-  { src: '/takehome/CleanShot%20Dec%2016%20from%20Portfolio%20Copy.png', alt: 'Yousign — Before starting identification, desktop and mobile' },
-  { src: '/takehome/Ignition%20Renders.png', alt: 'Ignition Program — mobile UI set' },
-  { src: '/takehome/Ignition%20Renders%203.png', alt: 'Ignition Program — mobile UI set' },
-  { src: '/takehome/Renders%20Ignition.png', alt: 'Ignition Program — mobile UI set' },
+  { src: '/takehome/CleanShot%20Dec%2017%20from%20Portfolio%20Copy.png', alt: 'Yousign - Verify your first and last name screen' },
+  { src: '/takehome/CleanShot%20Dec%2016%20from%20Portfolio%20Copy.png', alt: 'Yousign - Before starting identification, desktop and mobile' },
+  { src: '/takehome/Ignition%20Renders.png', alt: 'Ignition Program - mobile UI set' },
+  { src: '/takehome/Ignition%20Renders%203.png', alt: 'Ignition Program - mobile UI set' },
+  { src: '/takehome/Renders%20Ignition.png', alt: 'Ignition Program - mobile UI set' },
 ]
 
 function TakeHome() {
@@ -56,7 +56,7 @@ function TakeHome() {
       </header>
 
       <section className="takehome-q">
-        <p className="takehome-answer">I'm drawn to Dust because I think the best AI tools won't just automate workflows — they'll reshape how people think alongside machines. That's the design problem I want to spend the next few years on.</p>
+        <p className="takehome-answer">I'm drawn to Dust because I think the best AI tools won't just automate workflows - they'll reshape how people think alongside machines. That's the design problem I want to spend the next few years on.</p>
         <p className="takehome-answer">Four questions below. My strongest work at Criteo is under NDA, but I'm happy to walk through it live.</p>
       </section>
 
@@ -92,7 +92,7 @@ function TakeHome() {
           the thinking matters as much as the output. For a while, I didn't make enough space for that.
         </p>
         <p className="takehome-answer">
-          Two things changed it. The first is real active listening — not nodding while I wait to talk, but actually
+          Two things changed it. The first is real active listening - not nodding while I wait to talk, but actually
           letting what someone says change my direction. The second is something Michael Bungay Stanier calls the{' '}
           <em>advice monster</em>: the reflex to jump in with a solution when the better move is one more question.
           Naming it made it easier to catch.
@@ -107,8 +107,8 @@ function TakeHome() {
         <p className="takehome-answer">Three things from past roles that still shape how I work.</p>
         <p className="takehome-answer">
           <strong>"Strong opinions, loosely held."</strong> It pushes you to commit to a clear point of view and defend
-          it, while staying genuinely open to being convinced otherwise. That tension — between conviction and flexibility
-          — is where the best design decisions happen.
+          it, while staying genuinely open to being convinced otherwise. That tension - between conviction and flexibility
+          - is where the best design decisions happen.
         </p>
         <p className="takehome-answer">
           <strong>Salary transparency.</strong> It sounds simple, but it changes so much. It builds trust, forces the
@@ -129,7 +129,7 @@ function TakeHome() {
         <div className="takehome-ai-grid">
           <div className="takehome-ai-text">
             <p className="takehome-answer">
-              Generative UI. Not chatbots or co-pilots, but interfaces and imagery that don't pre-exist — that get
+              Generative UI. Not chatbots or co-pilots, but interfaces and imagery that don't pre-exist - that get
               created with personal queries and context.
             </p>
 

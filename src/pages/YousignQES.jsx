@@ -318,15 +318,15 @@ export default function YousignQES() {
         Clearer, more thoughtful guidance. Simple changes like &ldquo;Verify
         your first and last name&rdquo; instead of &ldquo;Verify your
         information&rdquo; gave users the confidence to move through the process
-        without mistakes. Adding gentle friction—like nudging users to
-        double-check their details—helped prevent errors while still keeping the
+        without mistakes. Adding gentle friction-like nudging users to
+        double-check their details-helped prevent errors while still keeping the
         flow intuitive.
       </p>
       <p>
         Collaboration was at the heart of this project. Working closely with
         Customer Care, Engineering, and Brand teams helped us create solutions
         that worked not just for users but for the business too. Testing and
-        iteration were vital—we refined each step based on real feedback to
+        iteration were vital-we refined each step based on real feedback to
         ensure we were solving the right problems in the right way.
       </p>
     </PostLayout>
