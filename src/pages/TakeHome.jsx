@@ -91,7 +91,7 @@ function TakeHome() {
           the thinking matters as much as the output. For a while, I didn't make enough space for that.
         </p>
         <p className="takehome-answer">
-          Two things changed it. The first is real active listening — not just tracking the argument but letting it
+          Two things changed it. The first is real active listening - not just tracking the argument but letting it
           reshape where I was headed. The second is something Michael Bungay Stanier calls the{' '}
           <em>advice monster</em>: the reflex to jump in with a solution when the better move is one more question.
           Naming it made it easier to catch.
