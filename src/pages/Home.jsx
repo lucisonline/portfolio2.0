@@ -61,7 +61,7 @@ export default function Home() {
         <p>I study how people behave, then design impactful products around that.</p>
 
         <p>
-          Right now I&rsquo;m shaping AI tools for advertising at{' '}
+          Right now I&rsquo;m shaping AI experiences rather than tools for advertising at{' '}
           <a href="https://criteo.com" className="company-link">
             <svg
               className="company-logo"
