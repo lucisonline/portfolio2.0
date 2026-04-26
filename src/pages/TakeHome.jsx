@@ -92,8 +92,8 @@ function TakeHome() {
           the thinking matters as much as the output. For a while, I didn't make enough space for that.
         </p>
         <p className="takehome-answer">
-          Two things changed it. The first is real active listening - not nodding while I wait to talk, but actually
-          letting what someone says change my direction. The second is something Michael Bungay Stanier calls the{' '}
+          Two things changed it. The first is real active listening — not just tracking the argument but letting it
+          reshape where I was headed. The second is something Michael Bungay Stanier calls the{' '}
           <em>advice monster</em>: the reflex to jump in with a solution when the better move is one more question.
           Naming it made it easier to catch.
         </p>
@@ -104,12 +104,7 @@ function TakeHome() {
 
       <section className="takehome-q">
         <h2 className="takehome-question">3) What operating principle or cultural thing have you loved from your past experiences?</h2>
-        <p className="takehome-answer">Three things from past roles that still shape how I work.</p>
-        <p className="takehome-answer">
-          <strong>"Strong opinions, loosely held."</strong> It pushes you to commit to a clear point of view and defend
-          it, while staying genuinely open to being convinced otherwise. That tension - between conviction and flexibility
-          - is where the best design decisions happen.
-        </p>
+
         <p className="takehome-answer">
           <strong>Salary transparency.</strong> It sounds simple, but it changes so much. It builds trust, forces the
           company to be fair and intentional about compensation, and removes the guesswork and awkwardness from career
