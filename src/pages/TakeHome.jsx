@@ -136,7 +136,7 @@ function TakeHome() {
             <p className="takehome-answer">
               Flipbook is the clearest example I've seen:{' '}
               <span className="takehome-ai-quote">a generative visual internet</span> that doesn't assemble pages from
-              components but generates the imagery itself, live. It's not a tool. It's closer to a medium.
+              components but generates the imagery itself, live.
             </p>
 
             <p className="takehome-answer">
