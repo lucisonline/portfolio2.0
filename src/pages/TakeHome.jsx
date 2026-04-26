@@ -57,7 +57,6 @@ function TakeHome() {
 
       <section className="takehome-q">
         <p className="takehome-answer">I'm drawn to Dust because I think the best AI tools won't just automate workflows - they'll reshape how people think alongside machines. That's the design problem I want to spend the next few years on.</p>
-        <p className="takehome-answer">Four questions below. My strongest work at Criteo is under NDA, but I'm happy to walk through it live.</p>
       </section>
 
       <section className="takehome-q">
