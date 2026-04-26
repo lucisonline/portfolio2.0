@@ -81,7 +81,7 @@ export default function Home() {
           <a href="https://yousign.com/" className="company-link">
             <img src="/logos/yousign.svg" alt="" className="company-logo" />
             Yousign
-          </a>, apprenticeship tech at{' '}
+          </a>, tech apprenticeship at{' '}
           <a href="https://www.multiverse.io/en-GB" className="company-link">
             <img src="/logos/multiverse.svg" alt="" className="company-logo" />
             Multiverse
