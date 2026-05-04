@@ -1,0 +1,18 @@
+# Luc Aractingi — Product Designer
+
+> Product designer focused on AI experiences and human behaviour.
+
+## About
+
+Luc Aractingi is a product designer currently shaping AI experiences at Criteo. Previously at Yousign (QES signing flows) and Ignition Program (tech apprenticeship platform).
+
+He studies how people behave, then designs impactful products around that.
+
+## Work
+
+- [Yousign — Reducing errors in QES](/yousign-qes): Research + Design · Mobile + Desktop (2025)
+- [Ignition Program — Reshaping sign-up](/ignition-program): Research + Design · Mobile first (2023)
+
+## Contact
+
+- Website: https://meetluc.com
